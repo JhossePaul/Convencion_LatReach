@@ -1,6 +1,5 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="description" content="LatReach Data Science: Presente y futuro">
@@ -15,8 +14,6 @@
 
     <link rel="stylesheet" href="./reveal/css/reveal.css">
     <link rel="stylesheet" href="./reveal/css/theme/latreach.css" id="theme">
-
-    <!-- Code syntax highlighting -->
     <link rel="stylesheet" href="./reveal/lib/css/github.css">
 </head>
 
@@ -47,43 +44,31 @@
                 <p>
                     Tantos datos que solo los puede interpretar un especialista
                 </p>
-                <p class="fragment" style="color: red;">o bien...</p>
+                <p class="fragment" style="color: red; text-shadow: 3px 3px 8px black;">o bien...</p>
                 <p class="fragment">
                     Datos que tengan el potencial de causar un impacto
                     positivo en un negocio
                 </p>
             </section>
+
             <section data-background-video="./videos/big_data.mp4"></section>
 
-            <section>
-                <h1>DBs</h1>
-            </section>
-
-            <section>
-                <h2>Data Mining</h2>
-                <p>
-                    El conjunto de técnicas que nos permiten procesar
-                    y extraer información de los datos
-                </p>
-                <video controls height="400px">
-                    <source src="./videos/data_mining.mp4"></source>
-                </video>
-            </section>
-
             <section data-background-iframe="./paperjs/examples/Animated/Smoothing.html">
-                <div style="background-color: rgba(250, 250, 250, 0.7);">
+                <div style="background-color: rgba(250, 250, 250, 0.95);">
                     <h2>El alcance de los datos</h2>
-                    <span style="color: red;">Data Fetching</span>&nbsp;
-                    <span style="color: blue;">Data Warehouse</span>&nbsp;
-                    <span style="color: green;">Data Mining</span>&nbsp;
-                    <span style="color: brown;">Data Analysis</span>&nbsp;
-                    <span style="color: purple;">Data Visualization</span>&nbsp;
-                    <span style="color: orange;">Human-Data Interaction</span>
+                    <span style="color: red; text-shadow: 2px 2px 5px black;">Data Fetching</span>&nbsp;
+                    <span style="color: blue; text-shadow: 2px 2px 5px black;">Data Warehouse</span>&nbsp;
+                    <span style="color: green; text-shadow: 2px 2px 5px black;">Data Mining</span>&nbsp;
+                    <span style="color: brown; text-shadow: 2px 2px 5px black;">Data Analysis</span>&nbsp;
+                    <span style="color: purple; text-shadow: 2px 2px 5px black;">Data Visualization</span>&nbsp;
+                    <span style="color: deeppink; text-shadow: 2px 2px 5px black;">Human-Data Interaction</span>
                     <br>
                     <br>
-                    <b>Data Immersion</b>
+                    <h3 style="color white; text-shadow: 2px 2px 8px black;">Data Immersion</h3>
                 </div>
             </section>
+
+            <section data-background-video="./videos/dbs.webm"></section>
 
             <section data-background="./images/math.jpg">
                 <div style="background-color: rgba(250, 250, 250, 0.95); box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);">
@@ -102,10 +87,12 @@
                     </div>
                 </div>
             </section>
+
+            <section data-background-video="./videos/da.webm"></section>
         </section>
 
         <section data-background-iframe="./iframes/star_wars_latreach.html">
-        <audio>
+        <audio controls style="margin-top: 70%;">
             <source src="./iframes/star_wars_theme.mp4" type="audio/mpeg">
         </audio>
         </section>
@@ -135,16 +122,9 @@
             </section>
         </section>
 
-<!--
-        <section onload="audioPlayer.stop();">
-            <p class="fragment grow">grow</p>
-            <p class="fragment shrink">shrink</p>
-            <p class="fragment fade-out">fade-out</p>
-            <p class="fragment current-visible">current-visible</p>
-            <p class="fragment highlight-red">highlight-red</p>
-            <p class="fragment highlight-blue">highlight-blue</p>
+        <section>
+            <h1 style="color: red; text-shadow: 5px 5px 10px black;">¡Gracias!</h1>
         </section>
--->
     </div>
 </div>
 
@@ -169,6 +149,7 @@ Reveal.initialize({
     ]
 });
 
+/*
 Reveal.addEventListener("slidechanged", function(event) {
     $('iframe').eq(1).attr('src', $("iframe").eq(1).attr("src"));
 
@@ -182,6 +163,7 @@ Reveal.addEventListener("slidechanged", function(event) {
     });
 
 });
+*/
 </script>
 </body>
 </html>
